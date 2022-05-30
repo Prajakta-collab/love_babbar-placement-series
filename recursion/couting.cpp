@@ -5,10 +5,10 @@ void printFun(int n){
     if(n==0){
         return;
     }
-  
+   printFun(n-1);
    
     cout<<n<<" ";
-     printFun(n-1);
+    
 }
 
 int main(){

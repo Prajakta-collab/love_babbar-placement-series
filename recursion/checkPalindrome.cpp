@@ -1,13 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
-int main(){
-    string str="book";
-    bool ans=checkPalindrome(str,0,str.length()-1);
-
-    cout<<"string palindrome or not: "<<ans<<endl;
-}bool checkPalindrome(string str,int i,int j){
+bool checkPalindrome(string str,int i,int j){
     //base case: check
     if(i>j)
         return true; 
@@ -18,3 +12,10 @@ int main(){
         return checkPalindrome(str,i+1,j-1);
     }
 }
+int main(){
+    string str="book";
+    bool ans=checkPalindrome(str,0,str.length()-1);
+
+    cout<<"string palindrome or not: "<<ans<<endl;
+}
+

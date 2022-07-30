@@ -9,7 +9,7 @@ int findUnique(int arr[],int size){
     return ans;
 }
 int main(){
-int arr[]={2,4,2,1,4};
+int arr[]={3,4,2,1,4};
 
 int ans=findUnique(arr,5);
 cout<<ans;
